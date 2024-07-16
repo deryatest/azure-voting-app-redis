@@ -19,7 +19,7 @@ pipeline {
       }
       stage('Run Tests') {
          steps {
-            bat(script: 'pytest ./tests/test_sample.py')
+            bat(script: './tests/test_sample.py')
          }
          post {
             success {
